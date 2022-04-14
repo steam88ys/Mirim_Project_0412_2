@@ -68,9 +68,19 @@ public class MainActivity extends AppCompatActivity {
                     result = num1 * num2;
                     break;
                 case R.id.btn_divide:
+                    if(num2==0) {
+                        Toast.makeText(getApplicationContext(),
+                                "나누는 수는 0이면 안됩니다.",
+                                Toast.LENGTH_LONG).show();
+                    }
                     result = num1 / num2;
                     break;
                 case R.id.btn_mod:
+                    if(num2==0) {
+                        Toast.makeText(getApplicationContext(),
+                                "나누는 수는 0이면 안됩니다.",
+                                Toast.LENGTH_LONG).show();
+                    }
                     result = num1 % num2;
                     break;
             }
