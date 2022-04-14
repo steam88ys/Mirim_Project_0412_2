@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            int num1 = Integer.parseInt(edit1Str);
-            int num2 = Integer.parseInt(edit2Str);
-            int result = 0;
+            double num1 = Double.parseDouble(edit1Str);
+            double num2 = Double.parseDouble(edit2Str);
+            double result = 0;
 
             switch (view.getId()) {
                 case R.id.btn_plus:
